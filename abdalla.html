@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div class="logo">Abdalla Emad</div>
+        <div class="list">
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Abdalla Emad</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">contact</a></li>
+            </div>
+        </div>
+        <section id="profile">
+         <div class="section__pic-container">
+            <img src="./assets/IMG_2395.jpg" alt="Abdalla Emad Profile Picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello I'm</p>
+            <h1 class="title">Abdalla Emad</h1>
+            <p class="section__text__p3">Frontend Developer</p>
+            <div class="btn-container">
+                <button
+                class="btn btn-color-2" onclick="window.open('./assets/Abdalla Emad.pdf')">
+                Download CV</button>
+                <button
+                class="btn btn-color-1" onclick="location.href='./#contact'">
+                Contct Info</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My Linkedin Profile"
+                class="icon" onclick="location.href='https://linkedin.com'">
+                <img src="./assets/github.png" alt="My Linkedin Profile"
+                class="icon" onclick="location.href='https://github.com'">
+            </div>
+        </div>
+        </section>
+        <section id="about">
+            <p class="section__text__p1">Get To Know More</p>
+            <h1 class="title">About Me</h1>
+            <div class="section__container">
+                <div class="section__pic-container">
+                    <img src="./assets/" alt="profile-picture" class="about-pic">
+                </div>
+                <div class="about-details-container">
+                    <div class="about-cotainers">
+                        <div class="details-container">
+                            <img src="./assets/" alt="experience-icon" class="icon">
+                            <h3>Experience</h3>
+                            <p>One year <br>Frontend Development</p>
+                        </div>
+                        <div class="details-container">
+                            <img src="./assets/" alt="education-icon" class="icon">
+                            <h3>Education</h3>
+                            <p>Bachelors Degree</p>
+                        </div>
+                    </div>
+                    <div class="text-container">
+                        <p>dflks;djfljwekjslkdjflksdjfklsdf
+                            sjkdflskjdf;klsdfkjsdkf;jlsdfasad
+                            akdlf;gjadfklgjak;ldfjgk;ladfjgkl;adf
+                           adkfgj;adkfgjadfkjgk;adjfgjklajdfg
+                           asdjgakldfgjadfgkjadfgkladgjadfgkljadfg 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <img src="./assets/" alt="Arrown-icon" class="arrow"
+            onclick="location.href='#experience'">
+        </section>
+    </nav>
+   <script src="sript.js"></script>
+</body>
+</html>
